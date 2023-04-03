@@ -1,0 +1,19 @@
+<div class="containercard">
+  <mat-card *ngFor="let restaurant of restaurants " class="example-card">
+    <mat-card-header>
+      
+      <mat-card-title style="color : white ; font-size : 30px">{{restaurant.restaurantName}}</mat-card-title>
+      <mat-card-subtitle>{{restaurant.companyName}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://img.freepik.com/premium-vector/fork-spoon-restaurant-logo-vector-template_736856-30.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p style="color : white ; font-size: 23px">
+     {{restaurant.email }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>VISITA</button>
+
+    </mat-card-actions>
+  </mat-card>
+</div>
